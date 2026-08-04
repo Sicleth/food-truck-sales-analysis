@@ -1,0 +1,31 @@
+"Code","Name","Category","Unit","Current Stock","Minimum Stock","Cost","Price","Current Stock Value","Current Stock Cost","Amount Sold","Quantity Sold","Profit"
+"","Casquinha ","Sorvete","unit","","","1","7","","","20,682","3,447","16,770.007"
+"","Cascão ","Sorvete","unit","","","1.2","9","","","21,248","2,656","17,578.948"
+"","Copo 150ml","Sorvete","unit","","","6","7","","","3,876","646",0
+"","Copo 200ml","Sorvete","unit","","","8","9","","","2,272","284",0
+"","Copo 250ml","Sorvete","unit","","","10","11","","","1,810","181",0
+"","Milkshake 300ml","Milkshake ","unit","","","10","11","","","21,070","2,107",0
+"","Milkshake 400ml","Milkshake ","unit","","","13","14","","","9,542","734",0
+"","Milkshake 500ml","Milkshake ","unit","","","16","16","","","10,912","727","-747.035"
+"","Água sem gás ","Bebida ","unit","","","4","4","","","3,580","895",0
+"","Água com gás ","Bebida ","unit","","","1.2","4.5","","","1,687.5","375","1,178.761"
+"","Refri 310ml","Bebida ","unit","","","6","7","","","3,060","472","185.675"
+"","Churros doce de leite ","Churros","unit","","","8","10","","","10,058","1,121","1,084.527"
+"","Churros de chocolate ","Churros","unit","","","8","10","","","8,211","915","878.392"
+"","Crepe suíço doce","Crepe suíço ","unit","","","8","11","","","4,260","426","784.855"
+"","Crepe suíço salgado ","Crepe suíço ","unit","","","8","10","","","9,939","1,108","1,008.676"
+"","Coco gelado","Bebida ","unit","-4",0,"12","12","-48","-48","576","48",0
+"","Combo 1","Combos","unit","","","14","15","","","2,506","179",0
+"","Combo 2","Combos","unit","","","15","16","","","315","21",0
+"","Combo 3","Combos","unit","","","14","15","","","728","52",0
+"","Combo 4","Combos","unit","","","18","18","","","396","22",0
+"","Combo 5","Combos","unit","","","12","12","","","204","17",0
+"","Chocolate quente 180ml","Bebida ","unit","","","5","10","","","80","16",0
+"","Café preto 180ml","Bebida ","unit","","","5","5","","",0,0,0
+"","Cafe com Leite 180ml","Bebida ","unit","","","7","7","","",0,0,0
+"","Misto quente","","unit","","","8","8","","",0,0,0
+"","Misto + café leite","Combos","unit","","","13","14","","",0,0,0
+"","Misto + chocolate quente ","Combos","unit","","","16","16","","",0,0,0
+"","Churros  + chocolate quente ","Combos","unit","","","17","18","","",0,0,0
+"","Misto + refri ","Combos","unit","","","13","13","","",0,0,0
+"","Crepe doce + chocolate quente ","Combos","unit","","","19","18","","",0,0,0
