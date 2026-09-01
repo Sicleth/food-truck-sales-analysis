@@ -54,16 +54,14 @@ food-truck-sales-analysis/
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb
 │   |── 02_sql_modeling.ipynb
-│   └── 02_visualization.ipynb
+│   └── 03_visualization.ipynb
 │
 ├── sql/
-│   ├── food_truck.db          
+│   └── food_truck.db          
 │
 ├── dashboard/
 │   └── food_truck_dashboard.pbix   
 │
-├── reports/
-│   └── insights_summary.md   # Key findings & recommendations
 │
 └── README.md
 ```
@@ -187,7 +185,7 @@ Recommendation: Monitor average ticket alongside order volume when evaluating fu
 
 Observation: 'Casquinha' ranks highly in sales volume and also generates higher estimated revenue.
 
-Why it matters: In this case the top sales product is the product with the highest revenue as well, but isn't necessarly true always.
+Why it matters: In this case the top sales product is the product with the highest revenue as well, but isn't necessarily always true.
 
 Recommendation: Use both sales volume and estimated revenue when evaluating product performance rather than relying only on the number of units sold.
 
