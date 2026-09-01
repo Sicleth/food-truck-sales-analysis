@@ -60,7 +60,10 @@ food-truck-sales-analysis/
 │   └── food_truck.db          
 │
 ├── dashboard/
-│   └── food_truck_dashboard.pbix   
+│   |── 01_executive_overview.png
+|   ├── 02_sales_performance.png
+│   |── 03_product_analysis.png
+│   └── food-truck-analysis-dashboard.pbix
 │
 │
 └── README.md
@@ -142,6 +145,16 @@ Focuses on product performance:
 Top Products by Revenue
 Top Products by Quantity
 Revenue Contribution by Product
+
+### Executive Overview
+dashboard/screenshots/01_executive_overview.png
+
+### Sales Performance 
+dashboard/screenshots/02_sales_performance.png
+ 
+### Product Analysis !
+dashboard/screenshots/03_product_analysis.png
+
 
 ## 📊 Key Insights
 
