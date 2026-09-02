@@ -4,11 +4,15 @@ End-to-end data analysis project using real sales data from my own food truck bu
 
 The project follows a real-world Data Analyst workflow focused on understanding sales performance, identifying patterns, and supporting data-driven business decisions.
 
+---
+
 ## 📌 Objective
 
-The objective of this project is to analyze historical food truck sales data to understand when sales happen, which products drive revenue, and how sales performance changes over time.
+The objective of this project is to analyze historical food truck sales data to understand **when sales happen, which products drive revenue, and how sales performance changes over time**.
 
 The analysis combines Python, SQL, and Power BI to transform raw operational data into meaningful business insights and recommendations.
+
+---
 
 ## ❓ Business Questions
 
@@ -22,60 +26,68 @@ The analysis focuses on the following business questions:
 - How concentrated is revenue among the top-selling products?
 - Are there recurring patterns throughout the month that could support operational decisions?
 
-Note: Product profitability was not analyzed because historical product-level cost data was not available in the source data.
+> **Note:** Product profitability was not analyzed because historical product-level cost data was not available in the source data.
+
+---
 
 ## 🛠️ Tools & Techniques
 
-Stage                          |         Tools / Techniques
-Data cleaning & transformation |         Python, Pandas
-Data modeling & querying	   |         SQL, SQLite
-Exploratory Data Analysis	   |         Pandas, Matplotlib
-Data visualization	           |         Matplotlib, Power BI
-Business intelligence	       |         Power BI, DAX
-Development environment        |         Jupyter Notebook
-Version control   	           |         Git, GitHub
+| Stage | Tools / Techniques |
+|---|---|
+| Data cleaning & transformation | Python, Pandas |
+| Data modeling & querying | SQL, SQLite |
+| Exploratory Data Analysis | Pandas, Matplotlib |
+| Data visualization | Matplotlib, Power BI |
+| Business intelligence | Power BI, DAX |
+| Development environment | Jupyter Notebook |
+| Version control | Git, GitHub |
+
+---
 
 ## 📁 Project Structure
 
-```
+```text
 food-truck-sales-analysis/
 │
 ├── data/
-│   ├── raw/                  # Original data (anonymized)
-|   |   ├── kyte/
-|   |   ├── manual_spreadsheet/
-|   |
-│   └── processed/            # Cleaned data ready for analysis
-|       ├── items_sold.csv/
-|       ├── monthly_expenses.csv/
-|       ├── revenue.csv/
-|       ├── sales_detail.csv/
+│   ├── raw/
+│   │   ├── kyte/
+│   │   └── manual_spreadsheet/
+│   │
+│   └── processed/
+│       ├── items_sold.csv
+│       ├── monthly_expenses.csv
+│       ├── revenue.csv
+│       └── sales_detail.csv
 │
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb
-│   |── 02_sql_modeling.ipynb
+│   ├── 02_sql_modeling.ipynb
 │   └── 03_visualization.ipynb
 │
 ├── sql/
-│   └── food_truck.db          
+│   └── food_truck.db
 │
 ├── dashboard/
-│   |── 01_executive_overview.png
-|   ├── 02_sales_performance.png
-│   |── 03_product_analysis.png
+│   ├── screenshots/
+│   │   ├── 01_executive_overview.png
+│   │   ├── 02_sales_performance.png
+│   │   └── 03_product_analysis.png
+│   │
 │   └── food-truck-analysis-dashboard.pbix
-│
 │
 └── README.md
 ```
 
+---
+
 ## 🔍 Methodology
 
-1. Data Collection
+### 1. Data Collection
 
 Sales data was collected from the food truck's operational records, including exported sales data and manually maintained spreadsheets.
 
-2. Data Cleaning & Transformation
+### 2. Data Cleaning & Transformation
 
 Python and Pandas were used to prepare the raw data for analysis.
 
@@ -88,7 +100,7 @@ The process included:
 - cleaning product names and categories;
 - creating structured datasets for analysis.
 
-3. SQL Analysis
+### 3. SQL Analysis
 
 The cleaned data was structured and analyzed using SQLite.
 
@@ -100,7 +112,7 @@ SQL queries were used to answer business questions related to:
 - time-based patterns;
 - orders and average ticket.
 
-4. Exploratory Data Analysis
+### 4. Exploratory Data Analysis
 
 Pandas and Matplotlib were used to explore trends and patterns before building the final dashboard.
 
@@ -113,157 +125,198 @@ The exploratory analysis focused on:
 - product sales volume;
 - product revenue contribution.
 
-5. Power BI Dashboard
+### 5. Power BI Dashboard
 
-An interactive Power BI dashboard was created with three analytical perspectives:
+An interactive Power BI dashboard was created with three analytical perspectives.
 
-Executive Overview
+#### Executive Overview
 
 Provides a high-level view of:
 
-Total Revenue
-Total Orders
-Average Ticket
-Total Units Sold
-Revenue Over Time
-Revenue by Weekday
-Estimated Revenue by Product
-Sales Performance
+- Total Revenue
+- Total Orders
+- Average Ticket
+- Total Units Sold
+- Revenue Over Time
+- Revenue by Weekday
+- Estimated Revenue by Product
+
+#### Sales Performance
 
 Focuses on temporal sales patterns:
 
-Revenue by Day of Month
-Orders by Weekday
-Average Ticket Trend
-Revenue by Month
-Weekly Revenue Trend
-Revenue by Hour
-Product Analysis
+- Revenue by Day of Month
+- Orders by Weekday
+- Average Ticket Trend
+- Revenue by Month
+- Weekly Revenue Trend
+- Revenue by Hour
+
+#### Product Analysis
 
 Focuses on product performance:
 
-Top Products by Revenue
-Top Products by Quantity
-Revenue Contribution by Product
+- Top Products by Revenue
+- Top Products by Quantity
+- Revenue Contribution by Product
 
-### Executive Overview
-dashboard/screenshots/01_executive_overview.png
+### Dashboard Screenshots
 
-### Sales Performance 
-dashboard/screenshots/02_sales_performance.png
- 
-### Product Analysis !
-dashboard/screenshots/03_product_analysis.png
+#### Executive Overview
 
+![Executive Overview](dashboard/screenshots/01_executive_overview.png)
+
+#### Sales Performance
+
+![Sales Performance](dashboard/screenshots/02_sales_performance.png)
+
+#### Product Analysis
+
+![Product Analysis](dashboard/screenshots/03_product_analysis.png)
+
+---
 
 ## 📊 Key Insights
 
 The insights below follow a consistent analytical structure:
 
-Observation → Why it matters → Recommendation
+**Observation → Why it matters → Recommendation**
 
-1. [Strongest Revenue Day]
+### 1. Saturday Is the Strongest Revenue Day
 
-Observation: Saturday generated the highest total revenue, with   R$172.496,00, representing approximately 25% of total revenue.
+**Observation:** Saturday generated the highest total revenue, with **R$172,496**, representing approximately **24,7% of total revenue**.
 
-Why it matters: The strongest weekday represents a significant portion of the business's sales performance and should receive greater operational attention.
+**Why it matters:** Saturday represents a significant share of overall sales, making it one of the most important days for operational planning.
 
-Recommendation: Prioritize stock preparation and operational capacity on Saturday, ensuring the most frequently sold products are available during the highest-demand periods.
+**Recommendation:** Prioritize inventory preparation and operational capacity for Saturday, ensuring that high-demand products are available throughout the busiest periods.
 
-2. [Afternoon Sales Peak]
+---
 
-Observation: Revenue reaches its highest level around 16:00, while the lowest revenue period occurs around 13:00 and 19:00.
+### 2. Sales Peak in the Afternoon
 
-Why it matters: Sales are concentrated during specific hours, meaning operational resources are not equally valuable throughout the entire working period.
+**Observation:** Revenue reaches its highest level around **16:00**, while the lowest revenue periods occur around **13:00 and 19:00**.
 
-Recommendation: Increase inventory and preparation capacity before the afternoon peak and evaluate whether low-demand hours justify the same operating capacity.
+**Why it matters:** Sales are concentrated during specific hours, indicating that demand and operational requirements vary significantly throughout the day.
 
-3. [Revenue Trend / Seasonality]
+**Recommendation:** Prioritize product preparation and inventory availability before the afternoon peak, while evaluating whether the lowest-demand periods require the same level of operational capacity.
 
-Observation: Monthly revenue reached its highest level in December, while the lowest recorded month was June.
+---
 
-Why it matters: The difference between stronger and weaker periods indicates that sales performance varies significantly over time rather than remaining constant.
+### 3. Revenue Shows Significant Monthly Variation
 
-Recommendation: Use historical performance to plan inventory and operating capacity ahead of stronger periods and investigate the causes of unusually weak months.
+**Observation:** December recorded the highest monthly revenue, while June recorded the lowest revenue during the analyzed period.
 
-4. [Average Ticket Pattern]
+**Why it matters:** The difference between the strongest and weakest months indicates that sales performance varies substantially over time.
 
-Observation: The average ticket changed from approximately R$ 13 to  R$18 during the analyzed period.
+**Recommendation:** Use historical sales patterns to anticipate periods of higher or lower demand and adjust inventory and operational planning accordingly.
 
-Why it matters: Changes in average ticket indicate whether revenue changes are being driven mainly by the number of orders or by the amount spent per order.
+---
 
-Recommendation: Monitor average ticket alongside order volume when evaluating future pricing or product-bundling strategies.
+### 4. Average Ticket Increased Over the Analyzed Period
 
-5. [Volume vs Revenue]
+**Observation:** The average ticket increased from approximately **R$13 to R$18** during the analyzed period.
 
-Observation: 'Casquinha' ranks highly in sales volume and also generates higher estimated revenue.
+**Why it matters:** Changes in average ticket help distinguish revenue growth driven by higher spending per order from growth driven by an increase in order volume.
 
-Why it matters: In this case the top sales product is the product with the highest revenue as well, but isn't necessarily always true.
+**Recommendation:** Continue monitoring average ticket alongside order volume when evaluating pricing, product combinations, and future sales strategies.
 
-Recommendation: Use both sales volume and estimated revenue when evaluating product performance rather than relying only on the number of units sold.
+---
 
-6. [Revenue Concentration]
+### 5. The Highest-Volume Product Also Leads Estimated Revenue
 
-Observation: The top three products account for 50% of estimated total revenue.
+**Observation:** **Casquinha** ranks highly in sales volume and also generates the highest estimated revenue among the products analyzed.
 
-Why it matters: A high concentration means overall revenue depends heavily on a relatively small number of products.
+**Why it matters:** In this dataset, the product with the highest sales volume also makes a strong contribution to estimated revenue, highlighting its importance to overall sales performance.
 
-Recommendation: Prioritize availability of the leading products while monitoring the performance of lower-contributing products to identify opportunities for assortment or pricing adjustments.
+**Recommendation:** Prioritize the availability of high-performing products such as Casquinha while continuing to evaluate products using both sales volume and estimated revenue.
 
-⚠️ Data Limitations
+---
 
-This analysis has some important limitations that should be considered when interpreting the results.
+### 6. Revenue Is Highly Concentrated Among the Top Products
 
-Estimated Product Revenue
+**Observation:** The top three products account for approximately **50% of estimated total revenue**.
 
-Historical product-level prices were not consistently available in the source data. Therefore, product revenue is estimated using current menu prices.
+**Why it matters:** A large share of estimated revenue depends on a relatively small number of products, increasing the importance of maintaining their availability.
 
-Product Costs
+**Recommendation:** Prioritize stock availability for the leading products while monitoring lower-contributing products to identify opportunities for assortment and pricing adjustments.
 
-Historical product-level cost data was not available. As a result, this project does not calculate actual product-level profit margins or profitability.
+---
 
-Item-Level Dates
+## ⚠️ Data Limitations
 
-Product-level historical timestamps were not available for all records. Therefore, some time-based product analyses are limited.
+This analysis has several limitations that should be considered when interpreting the results.
+
+### Estimated Product Revenue
+
+Historical product-level prices were not consistently available in the source data. Therefore, product revenue is estimated using current menu prices rather than historical transaction prices.
+
+### Product Costs
+
+Historical product-level cost data was not available. As a result, this project does **not** calculate actual product-level profit margins or profitability.
+
+### Item-Level Dates
+
+Product-level historical timestamps were not available for all records. Therefore, some product-level time-based analyses are limited.
 
 These limitations are explicitly documented to avoid presenting estimates as historical financial results.
 
-💡 Business Recommendations
+---
+
+## 💡 Business Recommendations
 
 Based on the analysis, the main opportunities identified are:
 
-align inventory preparation with peak sales hours;
-monitor weekday and monthly revenue patterns when planning operations;
-prioritize high-revenue and high-volume products for stock availability;
-monitor average ticket together with order volume;
-investigate unusually strong or weak periods to understand the operational or external factors behind them;
-incorporate historical product costs in future analyses to enable actual margin and profitability analysis.
+- align inventory preparation with peak sales hours;
+- prioritize operational capacity on high-revenue days;
+- monitor weekday and monthly revenue patterns when planning operations;
+- prioritize high-revenue and high-volume products for stock availability;
+- monitor average ticket together with order volume;
+- investigate unusually strong or weak periods to understand the operational or external factors behind them;
+- incorporate historical product costs in future analyses to enable actual margin and profitability analysis.
+
+---
 
 ## 🚀 How to Run This Project
 
+### Clone the repository
+
 ```bash
-# Clone the repository
-git clone https://github.com/Sicleth/food-truck-sales-analysis.git cd food-truck-sales-analysis
+git clone https://github.com/Sicleth/food-truck-sales-analysis.git
+cd food-truck-sales-analysis
+```
 
-# Install dependencies
+### Install dependencies
+
+```bash
 pip install pandas matplotlib jupyter
+```
 
-# Run notebooks
+### Run the notebooks
+
+```bash
 jupyter notebook
+```
 
-Then open the notebooks in the following order:
+Open the notebooks in the following order:
 
+```text
 01_data_cleaning.ipynb
 02_sql_modeling.ipynb
 03_visualization.ipynb
 ```
 
+### Power BI Dashboard
+
+Open `food-truck-analysis-dashboard.pbix` using **Microsoft Power BI Desktop** to explore the interactive dashboard.
+
+---
+
 ## 👤 About Me
 
 This project is part of my portfolio as I transition into a career in Data Analytics.
 
-I developed this project using real data from a business I operate myself, applying skills developed through the IBM Data Analyst Professional Certificate and independent study.
+I developed this project using real data from a business I operate myself, applying skills developed through the **IBM Data Analyst Professional Certificate** and independent study.
 
 The goal was not only to practice technical tools, but to demonstrate how data can be transformed into insights that support real business decisions.
 
-Tools used: Python • Pandas • SQL • SQLite • Matplotlib • Power BI • Jupyter Notebook • Git • GitHub
+**Tools used:** Python • Pandas • SQL • SQLite • Matplotlib • Power BI • DAX • Jupyter Notebook • Git • GitHub
