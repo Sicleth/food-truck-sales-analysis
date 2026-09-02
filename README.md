@@ -52,7 +52,12 @@ food-truck-sales-analysis/
 ├── data/
 │   ├── raw/
 │   │   ├── kyte/
+│   │   │   ├── Products_20250101_20260101.csv/
+│   │   │   ├── Products_20260101_20260804.csv/
+│   │   │   ├── Sales_20250101_20260101.csv/
+│   │   │   └── Sales_20260101_20260804.csv/
 │   │   └── manual_spreadsheet/
+│   │       └── Copia de vendas sorvete.xlsx/
 │   │
 │   └── processed/
 │       ├── items_sold.csv
